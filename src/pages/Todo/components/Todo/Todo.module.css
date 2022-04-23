@@ -1,0 +1,35 @@
+.todoContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.todo {
+    cursor: pointer;
+}
+
+
+.completed{
+    text-decoration: line-through;
+    color: #ccc;
+    cursor: pointer;
+}
+
+
+
+.btn{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 15px;
+    border: 1px solid #059669;
+    color: #059669;
+}
+
+
+.remove{
+    margin-left: 10px;
+    color: rgb(236,68,68);
+    border: 1px solid rgb(236,68,68);
+}

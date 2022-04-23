@@ -1,0 +1,52 @@
+/* #9ca3af */
+/* #e5e7eb */
+/* #059669 */
+/* #6ee7b7 */
+/* #a7f3d0 */
+
+
+
+
+
+
+.form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20rem;
+    margin-top: 20px;
+}
+.addTodo{
+    margin-left: 10px;
+    background-color: #059669;
+    border-radius: 5px;
+    padding: 5px 15px;
+    border: 1px solid #059669;
+    color: #fff;
+}
+
+.update{
+    margin-left: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 15px;
+    border: 1px solid #059669;
+    color: #059669;
+}
+
+
+
+.form input{
+    outline:none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 3px;
+    background-color: #fff;
+    width: 200px;
+
+}
+
+.form input:focus{
+    border: 2px solid rgba(204, 204, 204, 0.857);   
+}
+
