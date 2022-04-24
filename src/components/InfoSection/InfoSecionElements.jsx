@@ -2,7 +2,8 @@ import styled from "styled-components";
 import {Link} from "react-router-dom"
 
 export const InfoSectionContainer = styled.div`
-  background-color: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#1d0553")};
+  /* background-color: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#1d0553")}; */
+  background-color: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#37075d")};
   color: #fff;
 
   @media screen and (max-width: 768px) {

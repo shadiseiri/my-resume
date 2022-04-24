@@ -1,12 +1,13 @@
 import React from 'react'
-import { todoObj } from '../InfoSection/data'
+import { shoppingCartObj, spaObj, todoObj } from '../InfoSection/data'
 import InfoSection from '../InfoSection/InfoSection'
 
 const Resume = () => {
   return (
     <>
-    
+    <InfoSection {...spaObj} />
     <InfoSection {...todoObj}/>
+    <InfoSection {...shoppingCartObj}/>
     </>
   )
 }

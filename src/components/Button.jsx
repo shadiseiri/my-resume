@@ -6,7 +6,7 @@ export const Button = styled.div`
   white-space: nowrap;
   background-color: ${({ primary }) => (primary ? "#2dd4bf" : "#010606")};
   padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
-  color: ${({ dark }) => (dark ? "#010606" : "#fff")};
+  color: #fff;
   font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
   outline: none;
   border: none;
@@ -19,7 +19,7 @@ export const Button = styled.div`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    color: ${({ dark }) => (dark ? "#fff" : "#010606")};
+    color: ${({ dark }) => (dark ? "#010606" : "#fff")};
     background-color: ${({ primary }) => (primary ? "#fff" : "#2dd4bf")};
   }
 

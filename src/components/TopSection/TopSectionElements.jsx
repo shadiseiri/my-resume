@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {Link} from "react-scroll"
 
 export const TopContainer = styled.div`
-  height: 800px;
+  height: 100vh;
   padding: 0 30px;
   background-color: #0c0c0c;
   display: flex;

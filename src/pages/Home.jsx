@@ -1,4 +1,3 @@
-import React from 'react'
 import InfoSection from '../components/InfoSection/InfoSection'
 import NavBar from '../components/NavBar/NavBar'
 import TopSection from '../components/TopSection/TopSection'
