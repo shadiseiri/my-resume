@@ -27,7 +27,7 @@ export const Nav = styled.nav`
     margin-top: -80px;
     position: sticky;
     top: 0;
-    background-color: #1d0553;
+    background: #37075d;
     z-index: 10;
   }
 `;

@@ -3,6 +3,7 @@ import NavBar from '../components/NavBar/NavBar'
 import TopSection from '../components/TopSection/TopSection'
 import { infoObjOne } from "../components/InfoSection/data";
 import Resume from '../components/Resume/Resume';
+import Footer from '../components/Footer/Footer';
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
     <TopSection/>
     <InfoSection {...infoObjOne}/>
     <Resume />
+    <Footer/>
     </>
   )
 }

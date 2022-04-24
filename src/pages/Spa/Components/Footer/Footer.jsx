@@ -65,7 +65,7 @@ const Footer = () => {
           <SocialMediaContainer>
             <SocialMediaWrapper>
               <SocialLogo to='' onClick={toggleHome} >ShadiSeiri</SocialLogo>
-              <WebSiteRights>shadiseiri&copy;2022</WebSiteRights>
+              <WebSiteRights>&copy; 2022 Shadi Seiri. All rights reserved.</WebSiteRights>
               <SocialIconsWrapper>
                 <SocialIconsLink href="/">
                   <FaFacebook />
