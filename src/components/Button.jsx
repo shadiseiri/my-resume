@@ -30,6 +30,5 @@ export const Button = styled.div`
 
   @media screen and (max-width: 480px) {
     font-size: ${({ fontBig }) => (fontBig ? "16px" : "14px")};
-    padding: ${({ big }) => (big ? "12px 40px" : "10px 28px")};
   }
 `;

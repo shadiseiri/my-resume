@@ -2,12 +2,11 @@ import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-
   position: fixed;
-  /* position: ${({toTop}) => (toTop ?  "sticky" : "fixed")};; */
-  z-index: 5;
+  /* position: ${({ toTop }) => (toTop ? "sticky" : "fixed")};; */
+  z-index: 10;
   bottom: ${({ scrollY }) => (scrollY ? `${scrollY}px` : 0)};
-  top: ${({toTop}) => (toTop ?  "0" : null)};
+  top: ${({ toTop }) => (toTop ? "0" : null)};
   right: 0;
   left: 0;
   background: linear-gradient(
@@ -26,9 +25,7 @@ export const Nav = styled.nav`
     scrollNav
       ? `linear-gradient(to right,transparent,#4d7ec1 , #3e086a,transparent )`
       : "transparent"}; */
-
-
-
+  overflow: visible;
 
   @media screen and (max-width: 768px) {
     margin-top: -60px;
@@ -46,6 +43,7 @@ export const NavContainer = styled.div`
   width: 100%;
   max-width: 1100px;
   padding: 0 24px;
+  overflow: visible;
 `;
 
 export const NavLogo = styled(LinkS)`
@@ -91,6 +89,7 @@ export const NavMenu = styled.ul`
   list-style: none;
   text-align: center;
   margin-right: -22px;
+  overflow: visible;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -100,6 +99,7 @@ export const NavMenu = styled.ul`
 export const NavItems = styled.li`
   background-color: ${({ color }) => color};
   height: 60px;
+  overflow: visible;
 
   &:hover {
     transform: scale(1.05);
@@ -115,8 +115,10 @@ export const NavLink = styled(LinkS)`
   height: 100%;
   cursor: pointer;
   box-sizing: content-box;
+  outline: none;
 
   &.active {
     border-bottom: 10px solid ${({ color }) => color};
+    margin-bottom: 0 !important;
   }
 `;
