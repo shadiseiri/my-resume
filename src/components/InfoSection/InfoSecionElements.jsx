@@ -16,7 +16,7 @@ export const InfoSectionWrapper = styled.div`
   max-width: 1100px;
   width: 100%;
   z-index: 1;
-  height: 860px;
+  height: 700px;
   margin: 0 auto;
   padding: 0 24px;
   justify-content: center;

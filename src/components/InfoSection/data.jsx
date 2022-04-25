@@ -4,7 +4,7 @@ export const infoObjOne = {
   text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur sequi repudiandae iure, quibusdam blanditiis laboriosam fuga consequatur vel excepturi iusto dolore atque nihil ipsam ratione, voluptas natus dolorum possimus totam.",
   imgFirst: true,
   lightBg:true,
-  src: require("../../images/svg4.svg").default,
+  src: require("../../images/mediumBlue/profile.svg").default,
   alt:"profile pic",
   to:"/",
   showBtn: false,
@@ -14,12 +14,12 @@ export const infoObjOne = {
 };
 
 export const spaObj = {
-  id: "portfolio",
+  id: "spaObj",
   header: "SPA Sample",
   text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur sequi repudiandae iure, quibusdam blanditiis laboriosam fuga consequatur vel excepturi iusto dolore atque nihil ipsam ratione, voluptas natus dolorum possimus totam.",
   imgFirst: false,
   lightBg:false,
-  src: require("../../images/svg5.svg").default,
+  src: require("../../images/mediumBlue/spa.svg").default,
   alt:"spa img",
   to:"/spa",
   showBtn: true,
@@ -29,12 +29,12 @@ export const spaObj = {
 } 
 
 export const todoObj = {
-  id: "todo",
+  id: "todoObj",
   header: "todo list",
   text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur sequi repudiandae iure, quibusdam blanditiis laboriosam fuga consequatur vel excepturi iusto dolore atque nihil ipsam ratione, voluptas natus dolorum possimus totam.",
   imgFirst: true,
   lightBg:true,
-  src: require("../../images/svg3.svg").default,
+  src: require("../../images/mediumBlue/todo.svg").default,
   alt:"todo img",
   to:"/todo",
   showBtn: true,
@@ -44,12 +44,12 @@ export const todoObj = {
 } 
 
 export const shoppingCartObj = {
-  id: "shoppingCart",
+  id: "shoppingCartObj",
   header: "Shopping cart Sample",
   text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur sequi repudiandae iure, quibusdam blanditiis laboriosam fuga consequatur vel excepturi iusto dolore atque nihil ipsam ratione, voluptas natus dolorum possimus totam.",
   imgFirst: false,
   lightBg:false,
-  src: require("../../images/svg6.svg").default,
+  src: require("../../images/mediumBlue/shopping.svg").default,
   alt:"shopping cart img",
   to:"/shoppingCart",
   showBtn: true,

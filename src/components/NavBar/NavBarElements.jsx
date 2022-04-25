@@ -2,32 +2,39 @@ import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  /* position: fixed;
+
+  position: fixed;
+  /* position: ${({toTop}) => (toTop ?  "sticky" : "fixed")};; */
   z-index: 5;
-  bottom: 0;
+  bottom: ${({ scrollY }) => (scrollY ? `${scrollY}px` : 0)};
+  top: ${({toTop}) => (toTop ?  "0" : null)};
   right: 0;
-  left: 0; */
-
-  margin-top: -60px;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: ${({scrollNav}) =>
-    scrollNav
-      ? `linear-gradient(to right,#4d7ec1 50%, #37075d 50%)`
-      : "transparent"};
-
+  left: 0;
+  background: linear-gradient(
+    to right,
+    transparent,
+    #4d7ec1,
+    #3e086a,
+    transparent
+  );
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
+  /* background: ${({ scrollNav }) =>
+    scrollNav
+      ? `linear-gradient(to right,transparent,#4d7ec1 , #3e086a,transparent )`
+      : "transparent"}; */
+
+
+
 
   @media screen and (max-width: 768px) {
-    margin-top: -80px;
+    margin-top: -60px;
     position: sticky;
     top: 0;
-    background: #37075d;
+    background: linear-gradient(to right, #4d7ec1, transparent, #3e086a);
     z-index: 10;
   }
 `;
@@ -51,7 +58,7 @@ export const NavLogo = styled(LinkS)`
     left: 0;
     color: #f7f8f9;
     justify-self: flex-start;
-    font-size: 1rem;
+    font-size: 1.05rem;
     display: flex;
     align-items: center;
     margin-top: 24px;
@@ -97,10 +104,6 @@ export const NavItems = styled.li`
   &:hover {
     transform: scale(1.05);
   }
-
-  &.active {
-    height: 80px;
-  }
 `;
 
 export const NavLink = styled(LinkS)`
@@ -111,10 +114,9 @@ export const NavLink = styled(LinkS)`
   padding: 0 1.5rem;
   height: 100%;
   cursor: pointer;
+  box-sizing: content-box;
 
-  /* &.active {
-    height: 110%;
-    border-bottom: 3px solid #9333ea;
-    
-  } */
+  &.active {
+    border-bottom: 10px solid ${({ color }) => color};
+  }
 `;

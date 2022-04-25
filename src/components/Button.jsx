@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Button = styled.div`
   border-radius: 50px;
   white-space: nowrap;
-  background-color: ${({ primary }) => (primary ? "#2dd4bf" : "#010606")};
+  background-color: ${({ primary }) => (primary ? "#4d7ec1" : "#010606")};
   padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
   color: #fff;
   font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
@@ -20,7 +20,7 @@ export const Button = styled.div`
   &:hover {
     transition: all 0.2s ease-in-out;
     color: ${({ dark }) => (dark ? "#010606" : "#fff")};
-    background-color: ${({ primary }) => (primary ? "#fff" : "#2dd4bf")};
+    background-color: ${({ primary }) => (primary ? "#fff" : "#4d7ec1")};
   }
 
   @media screen and (max-width: 768px) {
