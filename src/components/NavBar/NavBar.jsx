@@ -5,14 +5,15 @@ import {
   MobileIcon,
   Nav,
   NavContainer,
-  NavItems,
+  NavLink,
   NavLogo,
   NavMenu,
-  NavLink,
+  NavContent,
 } from "./NavBarElements";
 
 const NavBar = ({ toTop, setToTop }) => {
-  const colorArray = ["#4d7ec1", "#4850a1", "#473b91", "#442784", "#3e086a"];
+  const colorArray = ["#4c77bc", "#4857a4", "#454094", "#422b83", "#3e086a"];
+  // const colorArray = ["#4d7ec1", "#4850a1", "#473b91", "#442784", "#3e086a"];
   const [scrollY, setScrollY] = useState(null);
   const navRef = useRef();
 
@@ -57,49 +58,33 @@ const NavBar = ({ toTop, setToTop }) => {
           <FaBars />
         </MobileIcon>
         <NavMenu>
-          <NavItems color={colorArray[0]}>
-            <NavLink to="/" onClick={toggleHomeHandler} smooth duration={500}>
-              Home
-            </NavLink>
-          </NavItems>
-          <NavItems color={colorArray[1]}>
-            <NavLink
-              to="profile"
-              smooth
-              duration={500}
-              spy
-              color={colorArray[1]}
-            >
-              Profile
-            </NavLink>
-          </NavItems>
-          <NavItems color={colorArray[2]}>
-            <NavLink
-              to="portfolio"
-              smooth
-              duration={500}
-              spy
-              color={colorArray[2]}
-            >
-              Portfolio
-            </NavLink>
-          </NavItems>
-          <NavItems color={colorArray[3]}>
-            <NavLink to="skill" smooth duration={500} spy color={colorArray[2]}>
-              Skill
-            </NavLink>
-          </NavItems>
-          <NavItems color={colorArray[4]}>
-            <NavLink
-              to="contact"
-              smooth
-              duration={500}
-              spy
-              color={colorArray[2]}
-            >
-              Contact
-            </NavLink>
-          </NavItems>
+          <NavLink
+            color={colorArray[0]}
+            to="/"
+            onClick={toggleHomeHandler}
+            smooth
+            duration={3000}
+          >
+            <NavContent>Home</NavContent>
+          </NavLink>
+          <NavLink color={colorArray[1]} to="profile" smooth duration={1000} spy>
+            <NavContent>Profile</NavContent>
+          </NavLink>
+          <NavLink
+            to="portfolio"
+            smooth
+            duration={1000}
+            spy
+            color={colorArray[2]}
+          >
+            <NavContent>Portfolio</NavContent>
+          </NavLink>
+          <NavLink color={colorArray[3]} to="skill" smooth duration={1000} spy>
+            <NavContent>Skill</NavContent>
+          </NavLink>
+          <NavLink to="contact" smooth duration={1000} spy color={colorArray[4]}>
+            <NavContent>Contact</NavContent>
+          </NavLink>
         </NavMenu>
       </NavContainer>
     </Nav>

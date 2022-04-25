@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 export const FooterContainer = styled.div`
-background-color:#37075d;
+background-color:#3e086a;
 opacity: 97%;
 `
 

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 export const ContactContainer = styled.div`
-height: 700px;
+height: 750px;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -34,6 +34,7 @@ width: 100%;
 export const ContactInputWrapper = styled.div`
 margin: 0 10px;
 width: 100%;
+box-sizing: border-box;
 
 `
 
@@ -46,7 +47,7 @@ padding: 5px;
 
 
 &:focus{
-    border-bottom: 1.5px solid #37075d;
+    border-bottom: 1.5px solid #3e086a;
     /* border: 1.5px solid #37075d;
     border-radius: 5px; */
 }
@@ -62,7 +63,7 @@ padding: 5px;
 
 &:focus{
     
-    border-bottom: 1.5px solid #37075d;
+    border-bottom: 1.5px solid #3e086a;
 }
 
 `
@@ -79,7 +80,7 @@ padding: 5px;
 
 &:focus{
     
-    border-bottom: 1.5px solid #37075d;
+    border-bottom: 1.5px solid #3e086a;
 }
 `
 
@@ -95,7 +96,7 @@ padding: 5px;
 
 &:focus{
     
-    border-bottom: 1.5px solid #37075d;
+    border-bottom: 1.5px solid #3e086a;
 }
 `
 
@@ -108,12 +109,13 @@ border: none;
 /* border-bottom: 1px solid #ccc; */
 cursor: pointer;
 border-radius:50px;
-background-color: #4d7ec1;
+background-color: #4c77bc;
 padding: 14px 48px;
 color: #fff;
 font-size: 18px;
 outline: none;
 transition: all 0.2s ease-in-out;
+box-sizing: border-box;
 
 &:hover {
     transition: all 0.2s ease-in-out;

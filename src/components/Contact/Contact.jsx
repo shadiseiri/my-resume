@@ -3,7 +3,7 @@ import { ContactContainer, ContactEmailInput, ContactForm, ContactInputWrapper, 
 
 const Contact = () => {
   return (
-    <>
+    <div id="contact">
       <ContactContainer>
         <ContactForm>
           <ContactWrapper>
@@ -34,7 +34,7 @@ const Contact = () => {
           </ContactWrapper>
         </ContactForm>
       </ContactContainer>
-    </>
+    </div>
   );
 };
 
