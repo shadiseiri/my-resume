@@ -11,21 +11,22 @@ import {
   NavLink,
 } from "./NavBarElements";
 
-const NavBar = ({toTop,setToTop}) => {
+const NavBar = ({ toTop, setToTop }) => {
   const colorArray = ["#4d7ec1", "#4850a1", "#473b91", "#442784", "#3e086a"];
   const [scrollY, setScrollY] = useState(null);
   const navRef = useRef();
 
-// fix navbar to the top of windpw when reaches there
+  // fix navbar to the top of windpw when reaches there
   const fixNavBar = () => {
     const navOffsetTop = navRef.current.offsetTop;
-    if(navOffsetTop <= 0 ){ setToTop(true)}
+    if (navOffsetTop <= 0) {
+      setToTop(true);
+    }
   };
 
-    
-// move navbar from down of window to top when the window is scrolling
+  // move navbar from down of window to top when the window is scrolling
   const changeNavPositionHandler = () => {
-    if (window.scrollY > 0 ) {
+    if (window.scrollY > 0) {
       setScrollY(window.scrollY);
     }
   };
@@ -34,10 +35,9 @@ const NavBar = ({toTop,setToTop}) => {
   const changeNavHandler = () => {
     if (window.scrollY > 0) {
       changeNavPositionHandler();
-      fixNavBar()
+      fixNavBar();
     }
   };
-
 
   useEffect(() => {
     window.addEventListener("scroll", changeNavHandler);
