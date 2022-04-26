@@ -10,7 +10,7 @@ padding: 40px;
 
 `
 
-export const ContactForm = styled.div`
+export const ContactForm = styled.form`
 
 
 `
@@ -103,7 +103,7 @@ padding: 5px;
 
 
 
-export const ContactSubmit = styled.input`
+export const ContactSubmit = styled.button`
 width: 100%;
 border: none;
 /* border-bottom: 1px solid #ccc; */
