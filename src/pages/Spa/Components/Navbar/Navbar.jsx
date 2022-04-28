@@ -45,12 +45,7 @@ const NavBar = ({ toggleHandler }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks
-                to=""
-                smooth={true}
-                onClick={toggleHome}
-                duration={500}
-              >
+              <NavLinks to="" smooth={true} onClick={toggleHome} duration={500}>
                 Home
               </NavLinks>
             </NavItem>
@@ -105,7 +100,15 @@ const NavBar = ({ toggleHandler }) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/signin">Sign in</NavBtnLink>
+            <NavBtnLink
+              to="signin"
+              smooth={true}
+              duration={500}
+              spy
+              offset={-80}
+            >
+              Sign in
+            </NavBtnLink>
           </NavBtn>
         </NavBarContainer>
       </Nav>

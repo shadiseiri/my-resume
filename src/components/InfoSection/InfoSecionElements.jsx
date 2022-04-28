@@ -3,7 +3,7 @@ import {Link} from "react-router-dom"
 
 export const InfoSectionContainer = styled.div`
   /* background-color: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#1d0553")}; */
-  background-color: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#3e086a")};
+  background-color: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#3e086a ")};
   color: #fff;
 
   @media screen and (max-width: 768px) {
@@ -16,7 +16,8 @@ export const InfoSectionWrapper = styled.div`
   max-width: 1100px;
   width: 100%;
   z-index: 1;
-  height: 750px;
+  min-height: 780px;
+  height: auto;
   margin: 0 auto;
   padding: 0 24px;
   justify-content: center;

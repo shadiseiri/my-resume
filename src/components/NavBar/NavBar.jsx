@@ -11,7 +11,7 @@ import {
   NavContent,
 } from "./NavBarElements";
 
-const NavBar = ({ toTop, setToTop }) => {
+const NavBar = ({ toTop, setToTop, toggleHandler }) => {
   const colorArray = ["#4c77bc", "#4857a4", "#454094", "#422b83", "#3e086a"];
   // const colorArray = ["#4d7ec1", "#4850a1", "#473b91", "#442784", "#3e086a"];
   const [scrollY, setScrollY] = useState(null);
@@ -54,7 +54,7 @@ const NavBar = ({ toTop, setToTop }) => {
         <NavLogo to="/" onClick={toggleHomeHandler} smooth duration={500}>
           Shadi Seiri
         </NavLogo>
-        <MobileIcon>
+        <MobileIcon onClick={toggleHandler}>
           <FaBars />
         </MobileIcon>
         <NavMenu>
@@ -79,8 +79,8 @@ const NavBar = ({ toTop, setToTop }) => {
           >
             <NavContent>Portfolio</NavContent>
           </NavLink>
-          <NavLink color={colorArray[3]} to="skill" smooth duration={1000} spy>
-            <NavContent>Skill</NavContent>
+          <NavLink color={colorArray[3]} to="skills" smooth duration={1000} spy>
+            <NavContent>Skills</NavContent>
           </NavLink>
           <NavLink to="contact" smooth duration={1000} spy color={colorArray[4]}>
             <NavContent>Contact</NavContent>

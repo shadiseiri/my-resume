@@ -10,7 +10,6 @@ import {
 } from "./TopSectionElements";
 import { Button } from "../Button";
 import myImg from "../../images/1027.jpg";
-// import NavBar from "../NavBar/NavBar";
 
 const TopSection = ({setToTop}) => {
   const topSecionRef = useRef();

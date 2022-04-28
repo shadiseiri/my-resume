@@ -2,12 +2,13 @@ import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
 import { Link as LinkS } from "react-scroll";
 
+
 export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: #0d0d0d;
+  background: rgba(62, 8, 106, 0.98);
   display: grid;
   align-items: center;
   left: 0;
@@ -58,37 +59,7 @@ export const SidebarLink = styled(LinkS)`
   transition: 0.2s ease-in-out;
 
   &:hover {
-    color: #fab209;
+    color: #4d7ec1;
     transition: 0.2s ease-in-out;
   }
-`;
-
-
-export const SideBtnWrapper = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-`
-
-export const SidebarSignin = styled(LinkS)`
-border-radius: 50px;
-background: #fab209;
-color: #010606;
-cursor: pointer;
-transition: 0.2s ease-in-out;
-white-space: nowrap;
-padding: 16px 64px;
-outline: none;
-font-size: 1rem;
-text-decoration: none;
-
-
-
-&:hover{
-    background: #fff;
-    transition: 0.2s ease-in-out;
-}
-
-
-
 `;

@@ -1,12 +1,12 @@
 import React from "react";
-import { HiHome } from "react-icons/hi";
-import { Container, Form, FormButton, FormContent, FormH1, FormInput, FormLabel, FormWrapper, Icon, Text } from "./SignInElements";
+// import { HiHome } from "react-icons/hi";
+import { Container, Form, FormButton, FormContent, FormH1, FormInput, FormLabel, FormWrapper, Text } from "./SignInElements";
 
 const SignInForm = () => {
   return (
-    <Container>
+    <Container id="signin">
       <FormWrapper>
-        <Icon to="/"><HiHome/></Icon>
+        {/* <Icon to="/"><HiHome/></Icon> */}
         <FormContent>
           <Form>
             <FormH1>Sign in to your account</FormH1>

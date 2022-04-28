@@ -3,7 +3,6 @@ import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
   position: fixed;
-  /* position: ${({ toTop }) => (toTop ? "sticky" : "fixed")};; */
   z-index: 10;
   bottom: ${({ scrollY }) => (scrollY ? `${scrollY}px` : 0)};
   top: ${({ toTop }) => (toTop ? "0" : null)};
@@ -21,10 +20,6 @@ export const Nav = styled.nav`
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  /* background: ${({ scrollNav }) =>
-    scrollNav
-      ? `linear-gradient(to right,transparent,#4d7ec1 , #3e086a,transparent )`
-      : "transparent"}; */
   overflow: visible;
 
   @media screen and (max-width: 768px) {
@@ -107,14 +102,12 @@ export const NavLink = styled(LinkS)`
   background-color: ${({ color }) => color};
   height: 60px;
   overflow: visible;
-  /* box-sizing: content-box; */
 
   &:hover {
     transform: scale(1.05);
   }
 
   &.active {
-    /* border-bottom: 10px solid ${({ color }) => color}; */
     height: 70px;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius:3px;

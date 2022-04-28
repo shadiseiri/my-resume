@@ -8,7 +8,7 @@ function SpaApp() {
   
       <Routes>
         <Route path="/" element={<Home />} exact />
-        <Route path="/signin" element={<SignIn />} exact />
+        {/* <Route path="/signin" element={<SignIn />} exact /> */}
       </Routes>
 
 
