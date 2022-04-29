@@ -33,6 +33,7 @@ export const SkillsTextContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-bottom: -50px;
 `
 
 
@@ -66,6 +67,7 @@ export const SkillsChartWrapper = styled.div`
   align-items: center;
   justify-content: center;
   grid-template-columns: repeat(4,1fr);
+  margin-top: -50px;
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr 1fr;

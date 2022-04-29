@@ -67,8 +67,8 @@ const NavBar = ({ toTop, setToTop, toggleHandler }) => {
           >
             <NavContent>Home</NavContent>
           </NavLink>
-          <NavLink color={colorArray[1]} to="profile" smooth duration={1000} spy>
-            <NavContent>Profile</NavContent>
+          <NavLink color={colorArray[1]} to="about me" smooth duration={1000} spy>
+            <NavContent>About Me</NavContent>
           </NavLink>
           {/* <NavLink color={colorArray[2]} to="resume" smooth duration={1000} spy>
             <NavContent>Resume</NavContent>

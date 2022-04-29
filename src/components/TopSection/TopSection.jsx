@@ -1,4 +1,4 @@
-import React, { useEffect, useRef} from "react";
+import React, { useEffect, useRef } from "react";
 import {
   Img,
   TopBg,
@@ -11,7 +11,7 @@ import {
 import { Button } from "../Button";
 import myImg from "../../images/1027.jpg";
 
-const TopSection = ({setToTop}) => {
+const TopSection = ({ setToTop }) => {
   const topSecionRef = useRef();
 
   const fixNavBar = () => {
@@ -21,15 +21,12 @@ const TopSection = ({setToTop}) => {
     }
   };
 
-
   useEffect(() => {
     window.addEventListener("scroll", fixNavBar);
-    if(window.scrollY> topSecionRef.current.offsetHeight){
-      setToTop(true)
+    if (window.scrollY > topSecionRef.current.offsetHeight) {
+      setToTop(true);
     }
   }, []);
-
-
 
   return (
     <TopContainer ref={topSecionRef}>
@@ -39,7 +36,7 @@ const TopSection = ({setToTop}) => {
       <TopContent>
         <TopH1>I'm Shadi Seiri</TopH1>
         <TopP>Web Developer</TopP>
-        <TopBtnWrapper to="profile">
+        <TopBtnWrapper to="about me" smooth duration={1000} spy>
           <Button primary showBtn dark>
             KNOW ME BETTER
           </Button>

@@ -10,7 +10,7 @@ const Sidebar = ({toggleHandler, isOpen}) => {
       <SidebarWrapper>
         <SidebarMenu>
           <SidebarLink onClick={toggleHandler} to="/">Home</SidebarLink>
-          <SidebarLink onClick={toggleHandler} to="profile">Profile</SidebarLink>
+          <SidebarLink onClick={toggleHandler} to="about me">About Me</SidebarLink>
           {/* <SidebarLink onClick={toggleHandler} to="resume">Resume</SidebarLink> */}
           <SidebarLink onClick={toggleHandler} to="portfolio">Portfolio</SidebarLink>
           <SidebarLink onClick={toggleHandler} to="skills">Skills</SidebarLink>

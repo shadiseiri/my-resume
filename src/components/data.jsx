@@ -1,6 +1,6 @@
 export const infoObjOne = {
-  id: "profile",
-  header: "Profile",
+  id: "about me",
+  header: "About me",
   text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur sequi repudiandae iure, quibusdam blanditiis laboriosam fuga consequatur vel excepturi iusto dolore atque nihil ipsam ratione, voluptas natus dolorum possimus totam.",
   imgFirst: true,
   lightBg:true,
