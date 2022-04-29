@@ -93,10 +93,10 @@ export const NavMenu = styled.ul`
   }
 `;
 
-export const NavItems = styled.li`
+// export const NavItems = styled.li`
 
 
-`;
+// `;
 
 export const NavLink = styled(LinkS)`
   background-color: ${({ color }) => color};

@@ -12,7 +12,7 @@ import {
 } from "./NavBarElements";
 
 const NavBar = ({ toTop, setToTop, toggleHandler }) => {
-  const colorArray = ["#4c77bc", "#4857a4", "#454094", "#422b83", "#3e086a"];
+  const colorArray = ["#4d7ec1", "#4857a4", "#454094", "#422b83", "#3e086a", "#55267cb"];
   // const colorArray = ["#4d7ec1", "#4850a1", "#473b91", "#442784", "#3e086a"];
   const [scrollY, setScrollY] = useState(null);
   const navRef = useRef();
@@ -70,6 +70,10 @@ const NavBar = ({ toTop, setToTop, toggleHandler }) => {
           <NavLink color={colorArray[1]} to="profile" smooth duration={1000} spy>
             <NavContent>Profile</NavContent>
           </NavLink>
+          {/* <NavLink color={colorArray[2]} to="resume" smooth duration={1000} spy>
+            <NavContent>Resume</NavContent>
+          </NavLink> */}
+
           <NavLink
             to="portfolio"
             smooth
@@ -79,9 +83,11 @@ const NavBar = ({ toTop, setToTop, toggleHandler }) => {
           >
             <NavContent>Portfolio</NavContent>
           </NavLink>
+
           <NavLink color={colorArray[3]} to="skills" smooth duration={1000} spy>
             <NavContent>Skills</NavContent>
           </NavLink>
+
           <NavLink to="contact" smooth duration={1000} spy color={colorArray[4]}>
             <NavContent>Contact</NavContent>
           </NavLink>

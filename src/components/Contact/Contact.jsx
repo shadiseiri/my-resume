@@ -1,8 +1,8 @@
 import React from "react";
 import emailjs from 'emailjs-com'
-import { ContactContainer, ContactEmailInput, ContactForm, ContactInputWrapper, ContactNameInput, ContactRowWrapper, ContactSubjectInput, ContactSubmit, ContactTextarea, ContactWrapper } from "./ContactElements";
+import { ContactContainer, ContactForm, ContactInput, ContactInputWrapper,  ContactRowWrapper, ContactSubmit, ContactTextarea, ContactWrapper } from "./ContactElements";
 
-const Contact = () => {
+const Contact = ({dark, lightBg}) => {
 
 const sendEmailHandler = (e) => {
   e.preventDefault();
@@ -21,20 +21,20 @@ const sendEmailHandler = (e) => {
 
   return (
     <div id="contact">
-      <ContactContainer>
+      <ContactContainer dark={dark}  lightBg={lightBg} >
         <ContactForm onSubmit={sendEmailHandler}>
           <ContactWrapper>
             <ContactRowWrapper>
               <ContactInputWrapper>
-                <ContactNameInput placeholder="Name" name="name" />
+                <ContactInput placeholder="Name" name="name" type="text"/>
               </ContactInputWrapper>
               <ContactInputWrapper>
-                <ContactEmailInput placeholder="Email" name="email" />
+                <ContactInput placeholder="Email" name="email" type="email" />
               </ContactInputWrapper>
             </ContactRowWrapper>
             <ContactRowWrapper>
                 <ContactInputWrapper>
-                    <ContactSubjectInput placeholder="Subject" name="subject"/>
+                    <ContactInput placeholder="Subject" name="subject" type="text" />
                 </ContactInputWrapper>
             </ContactRowWrapper>
             <ContactRowWrapper>

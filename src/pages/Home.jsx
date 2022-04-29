@@ -1,6 +1,11 @@
 import InfoSection from "../components/InfoSection/InfoSection";
 import TopSection from "../components/TopSection/TopSection";
-import { infoObjOne } from "../components/InfoSection/data";
+import {
+  contactObj,
+  infoObjOne,
+  infoObjTwo,
+  skillsObj,
+} from "../components/data";
 import Resume from "../components/Resume/Resume";
 import Footer from "../components/Footer/Footer";
 import Contact from "../components/Contact/Contact";
@@ -22,10 +27,13 @@ const Home = () => {
       <Sidebar toggleHandler={toggleHandler} isOpen={isOpen} />
       <NavBar toTop={toTop} setToTop={setToTop} toggleHandler={toggleHandler} />
       <TopSection setToTop={setToTop} />
+
       <InfoSection {...infoObjOne} />
+      {/* <InfoSection {...infoObjTwo} /> */}
       <Resume />
-      <Skills />
-      <Contact />
+      <Skills {...skillsObj} />
+      <Contact {...contactObj} />
+
       <Footer />
     </>
   );

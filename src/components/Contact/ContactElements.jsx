@@ -1,13 +1,15 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled.div`
-  min-height: 780px;
+  min-height: 800px;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 40px;
-  background-color: #3e086a;
+  background-color: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#3e086a ")};
+  color: #010606;
+  
 `;
 
 export const ContactForm = styled.form`
@@ -43,25 +45,26 @@ export const ContactInputWrapper = styled.div`
   }
 `;
 
-export const ContactNameInput = styled.input`
+export const ContactInput = styled.input`
   width: 100%;
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #3e086a;
   outline: none;
   padding: 5px;
   background-color: transparent;
-  color: #fff;
+  color: #010606;
+
   /* font-weight: 700; */
 
 /* Change the white to any color */
-input:-webkit-autofill,
+/* input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active  {
   -webkit-box-shadow: 0 0 0 30px transparent inset !important;
-}
+} */
   &::placeholder {
-    color: #f7f8fa98;
+    color: #747373;
   }
 
   &:focus {
@@ -69,60 +72,24 @@ input:-webkit-autofill:active  {
   }
 `;
 
-export const ContactEmailInput = styled.input`
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid #fff;
-  outline: none;
-  padding: 5px;
-  background-color: transparent;
-  color: #fff;
-  /* font-weight: 700; */
-
-  &::placeholder {
-    color: #f7f8fa98;
-  }
-
-  &:focus {
-    border-bottom: 1.5px solid #4d7ec1;
-  }
-`;
-
-export const ContactSubjectInput = styled.input`
-  width: 100%;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid #fff;
-  padding: 5px;
-  background-color: transparent;
-  color: #fff;
-  /* font-weight: 700; */
-
-  &::placeholder {
-    color: #f7f8fa98;
-  }
-
-  &:focus {
-    border-bottom: 1.5px solid #4d7ec1;
-  }
-`;
 
 export const ContactTextarea = styled.textarea`
   width: 100%;
   outline: none;
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #3e086a;
   padding: 5px;
   background-color: transparent;
-  color: #fff;
+  color: #010606;
+
   /* font-weight: 700; */
 
   &::placeholder {
-    color: #f7f8fa98;
+    color: #747373;
   }
 
   &:focus {
-    border-bottom: 1.5px solid #4d7ec1;
+    border-bottom: 2px solid #4d7ec1;
   }
 `;
 
@@ -142,9 +109,9 @@ export const ContactSubmit = styled.button`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    color: #010606;
+    color: #3e086a;
     background-color: #fff;
-    border: 2px solid #ccc;
+    border: 2px solid #3e086a;
   }
 
   @media screen and (max-width: 768px) {

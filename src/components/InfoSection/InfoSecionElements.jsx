@@ -2,9 +2,7 @@ import styled from "styled-components";
 import {Link} from "react-router-dom"
 
 export const InfoSectionContainer = styled.div`
-  /* background-color: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#1d0553")}; */
   background-color: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#3e086a ")};
-  color: #fff;
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -60,7 +58,7 @@ export const InfoSectionH2 = styled.h2`
   line-height: 1.1;
   font-weight: 700;
   text-transform: uppercase;
-  color: ${({ lightBg }) => (lightBg ? "#010606" : "#f7f8fa")};
+  color: ${({ lightBg }) => (lightBg ? "" : "#f7f8fa")};
 
   @media screen and (max-width: 480px) {
     font-size: 2rem;
