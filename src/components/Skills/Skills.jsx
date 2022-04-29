@@ -24,8 +24,12 @@ const Skills = ({ dark, lightBg }) => {
   };
 
   return (
-    <div id="skills" onMouseEnter={scrollHandler}>
-      <SkillsContainer lightBg={lightBg} dark={dark}>
+      <SkillsContainer
+        lightBg={lightBg}
+        dark={dark}
+        id="skills"
+        onMouseEnter={scrollHandler}
+      >
         <SkillsWrapper ref={chartRef}>
           <SkillsTextContainer>
             <SkillsHeading>Skills</SkillsHeading>
@@ -83,7 +87,7 @@ const Skills = ({ dark, lightBg }) => {
           </SkillsChartWrapper>
         </SkillsWrapper>
       </SkillsContainer>
-    </div>
+   
   );
 };
 

@@ -13,7 +13,6 @@ import {
 
 const NavBar = ({ toTop, setToTop, toggleHandler }) => {
   const colorArray = ["#4d7ec1", "#4857a4", "#454094", "#422b83", "#3e086a", "#55267cb"];
-  // const colorArray = ["#4d7ec1", "#4850a1", "#473b91", "#442784", "#3e086a"];
   const [scrollY, setScrollY] = useState(null);
   const navRef = useRef();
 

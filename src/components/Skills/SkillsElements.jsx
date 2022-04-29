@@ -13,15 +13,15 @@ export const SkillsContainer = styled.div`
 `;
 
 export const SkillsWrapper = styled.div`
-  display: grid;
+  display: flex;
+  flex-direction: column;
   max-width: 1100px;
   width: 100%;
   height: 100%;
-  padding: 40px;
+  padding: 50px;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
-grid-template-rows: 1fr 1fr;
 
 
 `;
@@ -33,13 +33,16 @@ export const SkillsTextContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-bottom: -50px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+
 `
 
 
 export const SkillsHeading = styled.h2`
   color: #fff;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1.1;
   font-weight: 700;
   text-transform: uppercase;
@@ -47,7 +50,7 @@ export const SkillsHeading = styled.h2`
 
 
   @media screen and (max-width: 480px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
 `
@@ -59,6 +62,10 @@ export const SkillsQoute = styled.p`
   margin-bottom: 20px;
   font-size: 18px;
   text-align: center;
+
+  @media screen and (max-width: 480px) {
+    font-size: 1rem;
+  }
   `
 
 
@@ -67,7 +74,10 @@ export const SkillsChartWrapper = styled.div`
   align-items: center;
   justify-content: center;
   grid-template-columns: repeat(4,1fr);
-  margin-top: -50px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr 1fr;
@@ -83,7 +93,7 @@ export const SkillsChartWrapper = styled.div`
 
 
 export const SkillsContent = styled.div`
-  width: 250px;
+  width: 200px;
   height: 300px;
   display: flex;
   flex-direction: column;

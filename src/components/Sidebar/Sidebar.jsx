@@ -1,7 +1,7 @@
 import React from "react";
 import { CloseIcon, Icon, SidebarContainer, SidebarLink, SidebarMenu, SidebarWrapper } from "./SidebarElements";
 
-const Sidebar = ({toggleHandler, isOpen}) => {
+const Sidebar = ({toggleHandler, isOpen , homeToggleHandler}) => {
   return (
     <SidebarContainer isOpen={isOpen} >
       <Icon onClick={toggleHandler} >
@@ -9,9 +9,8 @@ const Sidebar = ({toggleHandler, isOpen}) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink onClick={toggleHandler} to="/">Home</SidebarLink>
+          <SidebarLink onClick={homeToggleHandler} to="">Home</SidebarLink>
           <SidebarLink onClick={toggleHandler} to="about me">About Me</SidebarLink>
-          {/* <SidebarLink onClick={toggleHandler} to="resume">Resume</SidebarLink> */}
           <SidebarLink onClick={toggleHandler} to="portfolio">Portfolio</SidebarLink>
           <SidebarLink onClick={toggleHandler} to="skills">Skills</SidebarLink>
           <SidebarLink onClick={toggleHandler} to="contact">Contact</SidebarLink>

@@ -7,7 +7,6 @@ import {
   SidebarMenu,
   SidebarLink,
   SideBtnWrapper,
-  SidebarRoute,
   SidebarSignin,
 } from "./SidebarElements";
 
