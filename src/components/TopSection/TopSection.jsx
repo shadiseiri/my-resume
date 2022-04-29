@@ -23,7 +23,7 @@ const TopSection = ({ setToTop }) => {
 
   useEffect(() => {
     window.addEventListener("scroll", fixNavBar);
-    if (window.scrollY > topSecionRef.current.offsetHeight) {
+    if (window.scrollY > (topSecionRef.current.offsetHeight-60)) {
       setToTop(true);
     }
   }, []);
