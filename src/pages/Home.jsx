@@ -18,17 +18,19 @@ const Home = () => {
     setIsOpen(!isOpen);
   };
 
+
   const homeToggleHandler = () => {
     window.scrollTo(0, 0);
     setIsOpen(!isOpen);
   };
+
 
   return (
     <>
       <Sidebar toggleHandler={toggleHandler} isOpen={isOpen} homeToggleHandler={homeToggleHandler} />
       <NavBar toTop={toTop} setToTop={setToTop} toggleHandler={toggleHandler} />
       <TopSection setToTop={setToTop} />
-
+      <InfoSection {...infoObjOne} />
       <Resume />
       <Skills {...skillsObj} />
       <Contact {...contactObj} />
@@ -39,3 +41,4 @@ const Home = () => {
 };
 
 export default Home;
+

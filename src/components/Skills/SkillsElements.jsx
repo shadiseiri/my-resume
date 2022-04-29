@@ -18,7 +18,7 @@ export const SkillsWrapper = styled.div`
   max-width: 1100px;
   width: 100%;
   height: 100%;
-  padding: 50px;
+  padding: 40px;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
@@ -36,6 +36,7 @@ export const SkillsTextContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
   max-width: 1100px;
+  margin-bottom: 50px;
 
 `
 
@@ -77,6 +78,7 @@ export const SkillsChartWrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
   max-width: 1100px;
+  grid-column-gap: 20px;
 
 
   @media screen and (max-width: 768px) {
@@ -93,8 +95,8 @@ export const SkillsChartWrapper = styled.div`
 
 
 export const SkillsContent = styled.div`
-  width: 200px;
-  height: 300px;
+  width: 150px;
+  height: 150;
   display: flex;
   flex-direction: column;
   justify-content: center;
