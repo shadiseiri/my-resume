@@ -61,7 +61,7 @@ export const expenseObj = {
     lightBg:true,
     src: require("../images/mediumBlue/expense.svg").default,
     alt:"Expense Trackerimg",
-    to:"/expenseTracker",
+    to:"/",
     showBtn: true,
     btnLabel:"Visit The Website",
     primary:true,
