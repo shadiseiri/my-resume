@@ -7,7 +7,7 @@ const Footer = () => {
     <FooterContainer>
       <FooterWrapper>
         <SocialMediaWrapper>
-          <SocialIconsLink href="https://github.com/shadiseiri" >
+          <SocialIconsLink>
             <FaGithub />
           </SocialIconsLink>
           <SocialIconsLink>
